@@ -4,6 +4,8 @@ import { View, Text, StyleSheet, TextInput } from 'react-native'
 import AppBar from '../components/AppBar';
 import Button from '../components/Button';
 
+import { TouchableOpacity } from 'react-native';
+
 const styles = StyleSheet.create({
 container: {
 flex: 1,
@@ -54,7 +56,11 @@ export default function LogInScreen() {
 
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>Not Register?</Text>
-                    <Text style={styles.footerLink}>Sign Up Here.</Text>
+
+                    <TouchableOpacity>
+                        <Text style={styles.footerLink}>Sign Up Here.</Text>
+                    </TouchableOpacity>
+
                 </View>
 
             </View>

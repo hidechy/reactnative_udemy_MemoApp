@@ -6,6 +6,10 @@ import { StyleSheet } from 'react-native'
 
 import { string } from 'prop-types';
 
+import { TouchableOpacity } from 'react-native';
+
+import { func } from 'prop-types';
+
 const styles = StyleSheet.create({
 
 buttonContainer: {
@@ -25,14 +29,19 @@ color: '#ffffff',
 
 Button.proptypes = {
 text: string.isRequired,
+onPress: func,
+};
+
+Button.defaultProps = {
+onPress: null,
 };
 
 export default function Button(props) {
-    const {text} = props;
+    const {text, onPress} = props;
 
     return (
-        <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
             <Text style={styles.buttonLabel}>{text}</Text>
-        </View>
+        </TouchableOpacity>
     )
 }
