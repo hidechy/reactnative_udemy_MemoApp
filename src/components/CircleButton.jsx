@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { string } from 'prop-types';
 
+import { shape } from 'prop-types';
+
 const styles = StyleSheet.create({
 
 circleButton: {
@@ -34,13 +36,18 @@ fontSize: 16,
 
 CircleButton.proptypes = {
 text: string.isRequired,
+style: shape(),
+};
+
+CircleButton.defaultProps = {
+style: null,
 };
 
 export default function CircleButton(props){
-const {text} = props;
+const {text, style} = props;
 
 return (
-<View style={styles.circleButton}>
+<View style={[styles.circleButton, style]}>
 <Text style={styles.circleButtonLabel}>{text}</Text>
 </View>
 )
