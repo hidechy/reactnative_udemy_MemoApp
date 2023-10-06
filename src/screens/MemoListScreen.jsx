@@ -20,7 +20,7 @@ return (
 
 <MemoList />
 
-<CircleButton text='追加' />
+<CircleButton name='plus' />
 
 </View>
 )

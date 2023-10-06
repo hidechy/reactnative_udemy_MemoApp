@@ -2,6 +2,8 @@ import React from 'react'
 
 import { StyleSheet, Text, View } from 'react-native';
 
+import { Feather } from '@expo/vector-icons';
+
 const styles = StyleSheet.create({
 
 memoListItem: {
@@ -30,13 +32,14 @@ color: '#848484',
 export default function MemoList() {
 return (
 <View>
+
 <View style={styles.memoListItem}>
 <View>
 <Text style={styles.memoListItemTitle}>買い物リスト</Text>
 <Text style={styles.memoListItemDate}>2023.10.06</Text>
 </View>
 <View>
-<Text>削除</Text>
+<Feather name='x' size={16} color='#b0b0b0' />
 </View>
 </View>
 
@@ -46,7 +49,7 @@ return (
 <Text style={styles.memoListItemDate}>2023.10.06</Text>
 </View>
 <View>
-<Text>削除</Text>
+<Feather name='x' size={16} color='#b0b0b0' />
 </View>
 </View>
 
@@ -56,7 +59,7 @@ return (
 <Text style={styles.memoListItemDate}>2023.10.06</Text>
 </View>
 <View>
-<Text>削除</Text>
+<Feather name='x' size={16} color='#b0b0b0' />
 </View>
 </View>
 
