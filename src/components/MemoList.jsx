@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 import { Feather } from '@expo/vector-icons';
 
@@ -39,7 +39,11 @@ return (
 <Text style={styles.memoListItemDate}>2023.10.06</Text>
 </View>
 <View>
+
+<TouchableOpacity>
 <Feather name='x' size={16} color='#b0b0b0' />
+</TouchableOpacity>
+
 </View>
 </View>
 
@@ -49,7 +53,11 @@ return (
 <Text style={styles.memoListItemDate}>2023.10.06</Text>
 </View>
 <View>
+
+<TouchableOpacity>
 <Feather name='x' size={16} color='#b0b0b0' />
+</TouchableOpacity>
+
 </View>
 </View>
 
@@ -59,7 +67,11 @@ return (
 <Text style={styles.memoListItemDate}>2023.10.06</Text>
 </View>
 <View>
+
+<TouchableOpacity>
 <Feather name='x' size={16} color='#b0b0b0' />
+</TouchableOpacity>
+
 </View>
 </View>
 
